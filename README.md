@@ -19,8 +19,22 @@ The goal of this notebook is to
 
 [Jupyter Labs](https://jupyter.org/) - An ipython kernel for interactive computing in python
 
-[OS](https://docs.python.org/3/library/os.html) - Miscellaneous operating system interface
+[Numpy](https://numpy.org/) - NumPy is an open source project aiming to enable numerical computing with Python.
 
+[Talib](https://ta-lib.org/) - TA-Lib is widely used by trading software developers requiring to perform technical analysis of financial market data.
+
+[Pandas_datareader](https://pypi.org/project/pandas-datareader/) - Pandas Datareader is a Python package that allows us to create a pandas DataFrame object by using various data sources from the internet. It is popularly used for working with realtime stock price datasets.
+
+[Sklearn]
+
+[Pycaret]
+
+import numpy as np
+import pandas as pd
+import talib as ta
+import pandas_datareader as webreader
+from sklearn.model_selection import train_test_split
+from pycaret.regression import *
 
 
 ---
@@ -151,20 +165,20 @@ This was a complicated conditional logic feat which was accomplished by looping 
 
 ## Contributors
 
-Created by Ben Spiegel, Silvano Ross and Tracie Stipp while in the UW FinTech Bootcamp
+Created by ,  and Tracie Stipp while in the UW FinTech Bootcamp
 > Contact Info:
 >
-> email: brspiegel@gmail.com |
-> [GitHub](https://github.com/brspiegel) |
-> [LinkedIn](https://www.linkedin.com/in/ben-spiegel-36753476/)
+> email: |
+> [GitHub]() |
+> [LinkedIn]()
 >
 > email: stipptracie@gmail.com |
 > [GitHub](https://github.com/stipptracie) |
 > [LinkedIn](https://www.linkedin.com/in/tracie-stipp-0719691b/)
 >
-> email: silvanoross3@gmail.com |
-> [GitHub](https://github.com/silvanoross) |
-> [LinkedIn](https://www.linkedin.com/in/silvano-ross-b6a15a93/)
+> email:  |
+> [GitHub]() |
+> [LinkedIn]()
 
 ---
 
