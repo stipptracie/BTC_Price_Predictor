@@ -2,7 +2,7 @@
 
 [Planning doc](https://github.com/stipptracie/BTC_Price_Predictor/blob/main/ProjectOutline.md)
 
-[Google Slides Presentation]()
+[Google Slides Presentation](https://docs.google.com/presentation/d/1HGoxUIvRFVSQXJkmUEHEMvzjjBAcIP2ZBC31PUGa6yc/edit#slide=id.p)
 
 The goal of this notebook is to 
 
