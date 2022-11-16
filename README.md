@@ -29,36 +29,11 @@ The goal of this notebook is to
 
 [Pycaret](https://pycaret.org/) - PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows.
 
----
+[Matplotlib](https://matplotlib.org/) - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. 
 
-## Installation Guide
+[Hvplot](https://hvplot.holoviz.org/) - HvPlot provides a high-level plotting API built on HoloViews that provides a general and consistent API for plotting data.
 
-First check that all of the anaconda associated packages have been installed by running:
-
-```python
-    conda list jupyter
-    conda list pandas
-```
-
-Next the packages not included need to be installed and this can be accomplished by entering the following in the Git Bash terminal.
-
-```python
-    pip install 
-    pip install 
-    pip install 
-    pip install 
-```
-
-To check that all of the dependencies have been installed by entering the following into the Git Bash Terminal:
-
-```python
-    conda list 
-    conda list 
-    conda list 
-    conda list 
-```
-
-With all of these packages the conda environment should be set up to run the BTC Price Predictor application
+[XGBoost](https://xgboost.readthedocs.io/en/stable/install.html) - XGBoost provides binary packages for some language bindings. The binary packages support the GPU algorithm (gpu_hist) on machines with NVIDIA GPUs.
 
 ---
 
@@ -69,6 +44,10 @@ With all of these packages the conda environment should be set up to run the BTC
 ---
 
 ## Highlights:
+
+
+
+
 
 ### Data Analysis
 
