@@ -85,26 +85,48 @@ Our first model won't work with the sentiment indicator:
 
 ![data](Images/SVM_inital/SVM_broke.png)
 
-Moving our model to GXBoost solved the issue and we have a pretty solid model to work with:
+Moving our model to GXBoost solved the issue:
 ![data](Images/GXBoost_inital/xgb_graph.png)
 
 ![data](Images/GXBoost_inital/xgbt_class_rep.png)
 
+---
+## Pycaret
+Knowing we have issues using some of our features we need to be able to test multiple models. Pycaret will allow us to test and analyze multiple models and allow us to choose the best fit.
+[Pycaret](https://pycaret.org/)
+
+![models](Images/Pycaret_final_optimized/feature_optimizer.png)
+
+![feature_importance](Images/Pycaret_final_optimized/Feature_importance.png)
+
+![feature_select](Images/Pycaret_final_optimized/Bay_featureselect.png)
+
+![stats](Images/Pycaret_final_optimized/Bay_stat.png)
+
+![price_difference](Images/Pycaret_final_optimized/bay_price_predict.png)
+
+![graph](Images/Pycaret_final_optimized/Bay_dollarvalues.png)
 
 ---
+## Conclusion
+Here is the describe data from our different models.  Our two inital models can be found under Pycaret_inital.  We tested with all of our features and then just using one feature.
 
+From there we tested different models and attempted to optimize our features using the graphs found in Pycaret.  Those models can be found under Pycaret_test.
+
+Our final model can be found under Pycaret_final. We also tested our predictor by moving the prediction date from next day to 7 and 14 days. 
+
+![stats](Images/Describe_data/describe_data.PNG)
+---
 ## Contributors
 
 Created by Ryan Granston, Austin Means and Tracie Stipp while in the UW FinTech Bootcamp
 > Contact Info:
 >
-> email: |
-> [GitHub]() |
-> [LinkedIn]()
+> email: austinmeans92@gmail.com|
+> [GitHub](https://github.com/aimeans) |
 >
-> email: |
-> [GitHub]() |
-> [LinkedIn]()
+> email: ryan.granston@gmail.com |
+> [GitHub](https://github.com/RGranston) |
 >
 > email: stipptracie@gmail.com |
 > [GitHub](https://github.com/stipptracie) |
