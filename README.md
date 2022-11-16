@@ -83,7 +83,7 @@ A sample of our models code:
 Code to show strategy returns:
 ![data](Images/SVM_inital/strategy_returns.PNG)
 Our first model won't work with the sentiment indicator:
-![data](Images/SVM_inital/SVM_broke.PNG)
+![data](Images/SVM_inital/SVM_broke.png)
 
 Moving our model to GXBoost solved the issue and we have a pretty solid model to work with:
 ![data](Images/GXBoost_inital/xgb_graph.png)
