@@ -4,7 +4,7 @@
 
 [Google Slides Presentation](https://docs.google.com/presentation/d/1HGoxUIvRFVSQXJkmUEHEMvzjjBAcIP2ZBC31PUGa6yc/edit#slide=id.p)
 
-The goal of this notebook is to 
+The goal of this notebook is to better predict Bitcoin prices using technical indicators, sentiment analysis and machine learning.
 
 
 ---
@@ -27,7 +27,7 @@ The goal of this notebook is to
 
 [Sklearn](https://scikit-learn.org/stable/index.html) - Scikit-learn: Machine Learning library, Simple and efficient tools for predictive data analysis
 
-[Pycaret](https://pycaret.org/) - PyCaret is an open-source, low-code machine learning library in Python that automates machine learning workflows.
+[Pycaret](https://pycaret.org/) - PyCaret is an open-source, machine learning library in Python that automates machine learning workflows.
 
 [Matplotlib](https://matplotlib.org/) - Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. 
 
@@ -37,17 +37,36 @@ The goal of this notebook is to
 
 ---
 
-## Usage
+## Install
+```
+# create a conda environment
+conda create --name yourenvname python=3.8
 
+# activate conda environment
+conda activate yourenvname
 
+# install pycaret
+pip install pycaret
+
+```
+If that doesn't work try:
+```
+# install the full version of pycaret
+pip install pycaret[full]
+```
 
 ---
 
-## Highlights:
+## Data
+- BTC price data pulled from Yahoo Finance. 
+- Technical indicators created using Talib. 
+- BTC sentiment indicator pulled from alternative.me using the following:
 
-
-
-
+```
+r = requests.get('https://api.alternative.me/fng/?limit=0')
+r.json()
+df = pd.DataFrame(r.json()['data'])
+```
 
 ### Data Analysis
 
