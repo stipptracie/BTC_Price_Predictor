@@ -80,9 +80,9 @@ Here is the data we used for our mode:
 ![data](Images/SVM_inital/svm_data.PNG)
 A sample of our models code:
 ![data](Images/SVM_inital/svm_code.PNG)
-Code to show strategy returns:
-![data](Images/SVM_inital/strategy_returns.PNG)
+
 Our first model won't work with the sentiment indicator:
+
 ![data](Images/SVM_inital/SVM_broke.png)
 
 Moving our model to GXBoost solved the issue and we have a pretty solid model to work with:
