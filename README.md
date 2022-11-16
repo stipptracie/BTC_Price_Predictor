@@ -69,13 +69,26 @@ df = pd.DataFrame(r.json()['data'])
 ```
 The sentiment indicator we are using measures "fear and greed".  The sourcs it uses include: social media, dominance, trends, volatility and market momentum.
 
-![sentiment](Images/Sentiment/sentiment.PNG.PNG)
+[Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
 
-[sentiment](https://alternative.me/crypto/fear-and-greed-index/)
+![sentiment](Images/Sentiment/sentiment.PNG)
 
-### Data Analysis
+### Inital Model
+Our inital model was based on using SVM but using our sentiment indicator would cause the model to break.  We found a similar issue using linear regression.
 
+Here is the data we used for our mode:
+![data](Images/SVM_inital/svm_data.PNG)
+A sample of our models code:
+![data](Images/SVM_inital/svm_code.PNG)
+Code to show strategy returns:
+![data](Images/SVM_inital/strategy_returns.PNG)
+Our first model won't work with the sentiment indicator:
+![data](Images/SVM_inital/SVM_broke.PNG)
 
+Moving our model to GXBoost solved the issue and we have a pretty solid model to work with:
+![data](Images/GXBoost_inital/xgb_graph.png)
+
+![data](Images/GXBoost_inital/xgbt_class_rep.png)
 
 
 ---
