@@ -67,6 +67,11 @@ r = requests.get('https://api.alternative.me/fng/?limit=0')
 r.json()
 df = pd.DataFrame(r.json()['data'])
 ```
+The sentiment indicator we are using measures "fear and greed".  The sourcs it uses include: social media, dominance, trends, volatility and market momentum.
+
+![sentiment](Images/Sentiment/sentiment.PNG.PNG)
+
+[sentiment](https://alternative.me/crypto/fear-and-greed-index/)
 
 ### Data Analysis
 
