@@ -21,7 +21,7 @@ The goal of this notebook is to better predict Bitcoin prices using technical in
 
 [Numpy](https://numpy.org/) - NumPy is an open source project aiming to enable numerical computing with Python.
 
-[Talib](https://ta-lib.org/) - TA-Lib is widely used by trading software developers requiring to perform technical analysis of financial market data.
+[Ta-lib](https://ta-lib.org/) - TA-Lib is widely used by trading software developers requiring to perform technical analysis of financial market data.
 
 [Pandas_datareader](https://pypi.org/project/pandas-datareader/) - Pandas Datareader is a Python package that allows us to create a pandas DataFrame object by using various data sources from the internet. It is popularly used for working with realtime stock price datasets.
 
@@ -59,7 +59,7 @@ pip install pycaret[full]
 
 ## Data
 - BTC price data pulled from Yahoo Finance. 
-- Technical indicators created using Talib. 
+- Technical indicators created using Ta-lib. 
 - BTC sentiment indicator pulled from alternative.me using the following:
 
 ```
@@ -67,7 +67,7 @@ r = requests.get('https://api.alternative.me/fng/?limit=0')
 r.json()
 df = pd.DataFrame(r.json()['data'])
 ```
-The sentiment indicator we are using measures "fear and greed".  The sourcs it uses include: social media, dominance, trends, volatility and market momentum.
+The sentiment indicator we are using measures "fear and greed".  The sources it uses include: social media, dominance, trends, volatility and market momentum.
 
 [Crypto Fear & Greed Index](https://alternative.me/crypto/fear-and-greed-index/)
 
@@ -76,23 +76,23 @@ The sentiment indicator we are using measures "fear and greed".  The sourcs it u
 ### Inital Model
 Our inital model was based on using SVM but using our sentiment indicator would cause the model to break.  We found a similar issue using linear regression.
 
-Here is the data we used for our mode:
+Data we used for our model:
 ![data](Images/SVM_inital/svm_data.PNG)
-A sample of our models code:
+Sample of our models code:
 ![data](Images/SVM_inital/svm_code.PNG)
 
-Our first model won't work with the sentiment indicator:
+Our first model didn't work with the sentiment indicator:
 
 ![data](Images/SVM_inital/SVM_broke.png)
 
-Moving our model to GXBoost solved the issue:
+Moving our model to XGBoost solved the issue:
 ![data](Images/GXBoost_inital/xgb_graph.png)
 
 ![data](Images/GXBoost_inital/xgbt_class_rep.png)
 
 ---
 ## Pycaret
-Knowing we have issues using some of our features we need to be able to test multiple models. Pycaret will allow us to test and analyze multiple models and allow us to choose the best fit.
+Knowing we had issues using some of our features we needed to be able to test multiple models. Pycaret allowed us to test and analyze multiple models and allowed us to choose the best fit.
 [Pycaret](https://pycaret.org/)
 
 ![models](Images/Pycaret_final_optimized/feature_optimizer.png)
@@ -109,11 +109,9 @@ Knowing we have issues using some of our features we need to be able to test mul
 
 ---
 ## Conclusion
-Here is the describe data from our different models.  Our two inital models can be found under Pycaret_inital.  We tested with all of our features and then just using one feature.
+Below is the summary data from our different models.  Our two initial models can be found under 'Pycaret_initial.ipynb' in our files.  We tested with all of our features and then just using one feature.
 
-From there we tested different models and attempted to optimize our features using the graphs found in Pycaret.  Those models can be found under Pycaret_test.
-
-Our final model can be found under Pycaret_final. We also tested our predictor by moving the prediction date from next day to 7 and 14 days. 
+From there, we tested different models and attempted to optimize our features using the graphs found in Pycaret.  Those models can be found under 'Pycaret_test.ipynb'. Our final model can be found under 'Pycaret_final.ipynb'. We also tested our predictor by moving the prediction date from next day to 7 and 14 days. 
 
 ![stats](Images/Describe_data/describe_data.PNG)
 ---
